@@ -7,11 +7,6 @@ elif a==b or a==c:
 elif b==c:
     reward = 1000 + (b*100)
 else:
-    if a > b and a>c:
-        reward = a*100
-    elif b>a and b>c:
-        reward = b*100
-    else:
-        reward = c*100
+    reward = max(a,b,c)*100
 
 print(reward)
